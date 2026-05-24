@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Dr. Iris Vega — Tropical Forest Ecologist · Field Portfolio</title>
+<meta name="description" content="Field portfolio of Dr. Iris Vega — tropical forest ecologist, director of the Canopy Stratification Lab at UFAM. Research, publications, expeditions, and field journal." />
+<meta name="theme-color" content="#0c1410" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dr. Iris Vega — Field Portfolio" />
+<meta property="og:description" content="Seventeen years in the canopy. Research, publications, and field journal of a tropical forest ecologist." />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400;1,6..72,500&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c1410'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23c87340'/%3E%3C/svg%3E" />
+</head>
+<body data-theme="forest">
+
+<!-- ─────────────────────────────────  INTRO  ───────────────────────────────── -->
+<div class="intro" id="intro">
+  <div class="intro-grid">
+    <div class="intro-tl mono">
+      <span>FIELD PORTFOLIO · V3.2</span>
+      <span>EST. 2009</span>
+    </div>
+    <div class="intro-tr mono">
+      <span>−3.4653° S · −62.2159° W</span>
+      <span>26.4°C · RH 92% · 47 m</span>
+    </div>
+    <div class="intro-bl mono">
+      <span>Loading canopy data</span>
+      <span class="intro-bar"><span id="intro-bar-fill"></span></span>
+      <span id="intro-bar-text">000 / 100</span>
+    </div>
+    <div class="intro-br mono">
+      <span>UFAM · Canopy Stratification Lab</span>
+      <span>Manaus · BR</span>
+    </div>
+    <div class="intro-center">
+      <div class="intro-eyebrow mono">
+        <span class="bar"></span> Field Portfolio · A Working Document
+      </div>
+      <div class="intro-name">
+        <span>Iris</span>
+        <span class="it">Vega</span>
+      </div>
+      <div class="intro-role">Tropical Forest Ecologist · b. Putumayo, 1981</div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom cursor -->
+<div class="cur-ring" id="cur-ring"></div>
+<div class="cur-dot" id="cur-dot"></div>
+
+<!-- Reading progress -->
+<div class="read-progress" id="read-progress"></div>
+
+<!-- ─────────────────────────────────  NAV  ───────────────────────────────── -->
+<nav class="nav">
+  <a href="#top" class="nav-brand">
+    <span class="nav-brand-dot"></span>
+    <span>Iris Vega</span>
+  </a>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#journal">Journal</a>
+    <a href="#species">Species</a>
+    <a href="#expeditions">Expeditions</a>
+    <a href="#press">Press</a>
+  </div>
+  <div class="nav-right">
+    <div class="ticker">
+      <span class="ticker-dot"></span>
+      <span class="ticker-k">MANAUS</span>
+      <span class="ticker-v" id="ticker-time">00:00:00</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-v" id="ticker-temp">26.4°C</span>
+    </div>
+    <button class="nav-cta" id="theme-toggle" title="Switch theme">
+      <span class="dot"></span>
+      <span id="theme-label">Forest</span>
+    </button>
+    <a href="#contact" class="nav-cta">
+      Get in touch
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" /></svg>
+    </a>
+  </div>
+  <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <nav class="nav-mobile-links">
+    <a href="#about"        class="nav-mobile-link"><span>About</span><span class="arr">↗</span></a>
+    <a href="#research"     class="nav-mobile-link"><span>Research</span><span class="arr">↗</span></a>
+    <a href="#publications" class="nav-mobile-link"><span>Publications</span><span class="arr">↗</span></a>
+    <a href="#journal"      class="nav-mobile-link"><span>Journal</span><span class="arr">↗</span></a>
+    <a href="#species"      class="nav-mobile-link"><span>Species</span><span class="arr">↗</span></a>
+    <a href="#expeditions"  class="nav-mobile-link"><span>Expeditions</span><span class="arr">↗</span></a>
+    <a href="#press"        class="nav-mobile-link"><span>Press</span><span class="arr">↗</span></a>
+    <a href="#contact"      class="nav-mobile-link"><span>Get in touch</span><span class="arr">↗</span></a>
+  </nav>
+  <div class="nav-mobile-footer">
+    <span>Manaus · BR · −3.46° S</span>
+    <span>iris.vega@ufam.edu.br</span>
+  </div>
+</div>
+
+<main>
+<!-- ─────────────────────────────────  HERO  ───────────────────────────────── -->
+<section class="hero" id="top">
+  <div class="hero-layers">
+    <div class="hero-layer" id="hero-layer-1" style="background-image:url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2000&q=80');opacity:.55;filter:blur(2px)"></div>
+    <div class="hero-layer" id="hero-layer-2" style="background-image:url('https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?auto=format&fit=crop&w=2000&q=80');opacity:.42;mix-blend-mode:screen"></div>
+    <div class="hero-layer" id="hero-layer-3" style="background-image:url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=2000&q=80');opacity:.7;-webkit-mask-image:linear-gradient(180deg,black 0%,black 60%,transparent 100%);mask-image:linear-gradient(180deg,black 0%,black 60%,transparent 100%)"></div>
+    <div class="hero-vignette"></div>
+  </div>
+
+  <!-- Botanical decor -->
+  <svg class="botanical botanical-left" viewBox="0 0 200 600" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+    <path class="vine" d="M100 0 C 90 80, 130 120, 110 200 S 70 320, 110 400 S 90 520, 100 600" stroke-width="1.2" />
+    <g class="leaf" style="animation-delay:0s" transform="translate(78 80) rotate(-30)"><ellipse cx="0" cy="0" rx="14" ry="5.88"/><line x1="-14" y1="0" x2="14" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.18s" transform="translate(132 150) rotate(40)"><ellipse cx="0" cy="0" rx="18" ry="7.56"/><line x1="-18" y1="0" x2="18" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.36s" transform="translate(86 240) rotate(-20)"><ellipse cx="0" cy="0" rx="16" ry="6.72"/><line x1="-16" y1="0" x2="16" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.54s" transform="translate(130 320) rotate(30)"><ellipse cx="0" cy="0" rx="20" ry="8.4"/><line x1="-20" y1="0" x2="20" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.72s" transform="translate(80 410) rotate(-25)"><ellipse cx="0" cy="0" rx="14" ry="5.88"/><line x1="-14" y1="0" x2="14" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.9s" transform="translate(128 490) rotate(35)"><ellipse cx="0" cy="0" rx="22" ry="9.24"/><line x1="-22" y1="0" x2="22" y2="0" stroke-width="0.6"/></g>
+  </svg>
+  <svg class="botanical botanical-right" viewBox="0 0 200 600" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true">
+    <path class="vine" d="M100 0 C 90 80, 130 120, 110 200 S 70 320, 110 400 S 90 520, 100 600" stroke-width="1.2" />
+    <g class="leaf" style="animation-delay:.05s" transform="translate(78 80) rotate(-30)"><ellipse cx="0" cy="0" rx="14" ry="5.88"/><line x1="-14" y1="0" x2="14" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.23s" transform="translate(132 150) rotate(40)"><ellipse cx="0" cy="0" rx="18" ry="7.56"/><line x1="-18" y1="0" x2="18" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.41s" transform="translate(86 240) rotate(-20)"><ellipse cx="0" cy="0" rx="16" ry="6.72"/><line x1="-16" y1="0" x2="16" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.59s" transform="translate(130 320) rotate(30)"><ellipse cx="0" cy="0" rx="20" ry="8.4"/><line x1="-20" y1="0" x2="20" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.77s" transform="translate(80 410) rotate(-25)"><ellipse cx="0" cy="0" rx="14" ry="5.88"/><line x1="-14" y1="0" x2="14" y2="0" stroke-width="0.6"/></g>
+    <g class="leaf" style="animation-delay:.95s" transform="translate(128 490) rotate(35)"><ellipse cx="0" cy="0" rx="22" ry="9.24"/><line x1="-22" y1="0" x2="22" y2="0" stroke-width="0.6"/></g>
+  </svg>
+
+  <div class="hero-content">
+    <div>
+      <div class="hero-tags" id="hero-tags">
+        <span class="tag">Tropical Ecologist</span>
+        <span class="tag">Canopy Researcher</span>
+        <span class="tag">PhD, Yale F&amp;ES, 2014</span>
+      </div>
+      <h1 id="hero-h1">
+        <span class="w"><span>Dr.</span></span>
+        <span class="w"><span>Iris</span></span>
+        <br />
+        <span class="w"><span class="it">Vega</span></span>
+      </h1>
+    </div>
+
+    <div class="hero-meta" id="hero-meta">
+      <div class="hero-meta-row"><span>Currently</span><span>Manaus, BR · 47 m elev.</span></div>
+      <div class="hero-meta-row"><span>Field station</span><span>Mamirauá</span></div>
+      <div class="hero-meta-row"><span>Lab</span><span>UFAM / Canopy Strat.</span></div>
+      <div class="hero-meta-row"><span>Coordinates</span><span>−3.46° S, −62.21° W</span></div>
+      <div class="hero-meta-row"><span>This morning</span><span>26.4°C · RH 92%</span></div>
+      <p style="font-family:var(--serif);font-style:italic;font-weight:300;font-size:19px;line-height:1.5;color:var(--ink);margin:16px 0 0;text-transform:none;letter-spacing:0;max-width:420px;">
+        "The canopy is the last room we will ever discover on this planet. I am trying to describe it before the door closes."
+      </p>
+    </div>
+  </div>
+
+  <a href="#about" class="hero-scroll">
+    <span>SCROLL</span>
+    <span class="hero-scroll-line"></span>
+  </a>
+</section>
+
+<!-- ─────────────────────────────────  MARQUEE  ───────────────────────────────── -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" style="animation-duration:60s">
+    <span class="marquee-item">Tropical Forest Ecology<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Canopy Stratification Lab<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Universidade Federal do Amazonas<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">MacArthur Fellow 2021<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Whitley Award 2023<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">PhD · Yale F&amp;ES · 2014<span class="marquee-sep">✦</span></span>
+
+    <span class="marquee-item">Tropical Forest Ecology<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Canopy Stratification Lab<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Universidade Federal do Amazonas<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">MacArthur Fellow 2021<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Whitley Award 2023<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">PhD · Yale F&amp;ES · 2014<span class="marquee-sep">✦</span></span>
+
+    <span class="marquee-item">Tropical Forest Ecology<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Canopy Stratification Lab<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Universidade Federal do Amazonas<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">MacArthur Fellow 2021<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">Whitley Award 2023<span class="marquee-sep">✦</span></span>
+    <span class="marquee-item">PhD · Yale F&amp;ES · 2014<span class="marquee-sep">✦</span></span>
+  </div>
+</div>
+
+<!-- ─────────────────────────────────  ABOUT  ───────────────────────────────── -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">01 / About</span>
+          <h2>Notes from <span class="italic">17 years</span> in the trees.</h2>
+        </div>
+        <p class="lede">Tropical forest ecologist. Founder of the Canopy Stratification Lab at the Universidade Federal do Amazonas. Working at the seam between canopy ecology, ethnobotany, and conservation policy.</p>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-portrait">
+          <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80" alt="Dr. Iris Vega in the field" />
+          <div class="about-portrait-caption">
+            <span>Iris Vega · 2024</span>
+            <span>−3.4653° S  −62.2159° W</span>
+          </div>
+        </div>
+        <div style="margin-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div>
+            <div class="mono" style="margin-bottom:6px">Languages</div>
+            <div style="font-family:var(--serif);font-size:17px">Spanish · English · Portuguese · Inga · Kichwa</div>
+          </div>
+          <div>
+            <div class="mono" style="margin-bottom:6px">Affiliations</div>
+            <div style="font-family:var(--serif);font-size:17px">UFAM · WCS · IUCN SSC · SPUN</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="about-prose">
+          <p class="dropcap">I have spent the last seventeen years thirty meters above the forest floor, suspended in canopies that almost no human has ever stood under. My work sits at the seam between tropical ecology, ethnobotany, and the politics of conservation — questions I first met as a child in the Putumayo, listening to my grandmother name the trees in two languages neither of us could fully translate.</p>
+          <p>Today I lead the Canopy Stratification Lab at the Universidade Federal do Amazonas, with field stations in Manaus, Iquitos, and the lower Sepik. The lab maps vertical biodiversity — the way a single hectare of rainforest stacks five forests on top of each other — and asks what we lose, exactly, when the tallest of them dies first.</p>
+          <p>When I am not in the trees I am writing about them, or photographing them, or arguing with ministries on behalf of them. I believe the canopy is the last room we will ever discover on this planet, and I am trying to describe it before the door closes.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat"><div class="stat-n">17</div><div class="stat-l">Years in the field</div></div>
+          <div class="stat"><div class="stat-n">412</div><div class="stat-l">Days under canopy / yr</div></div>
+          <div class="stat"><div class="stat-n">63</div><div class="stat-l">Peer-reviewed papers</div></div>
+          <div class="stat"><div class="stat-n">9</div><div class="stat-l">Countries surveyed</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div style="margin-top:80px">
+        <span class="eyebrow">Curriculum Vitæ · selected</span>
+        <div class="cv-timeline">
+          <div class="cv-row"><div class="y">2024</div><div class="what">Director, Canopy Stratification Lab</div><div class="where">Universidade Federal do Amazonas</div></div>
+          <div class="cv-row"><div class="y">2023</div><div class="what">Whitley Award for Tropical Conservation</div><div class="where">Whitley Fund for Nature, London</div></div>
+          <div class="cv-row"><div class="y">2021</div><div class="what">MacArthur Fellow</div><div class="where">John D. &amp; Catherine T. MacArthur Foundation</div></div>
+          <div class="cv-row"><div class="y">2019</div><div class="what">Senior Fellow, WCS Forests Program</div><div class="where">Wildlife Conservation Society</div></div>
+          <div class="cv-row"><div class="y">2014</div><div class="what">PhD, Tropical Forest Ecology</div><div class="where">Yale School of the Environment</div></div>
+          <div class="cv-row"><div class="y">2009</div><div class="what">Field assistant, Manú Wildlife Centre</div><div class="where">Cocha Cashu Biological Station, Perú</div></div>
+          <div class="cv-row"><div class="y">2007</div><div class="what">BSc, Biology</div><div class="where">Universidad Nacional, Bogotá</div></div>
+          <div class="cv-row"><div class="y">1981</div><div class="what">Born</div><div class="where">Mocoa, Putumayo, Colombia</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────  HORIZONTAL PROJECTS  ───────────────────────── -->
+<section class="h-projects" id="research">
+  <div class="h-projects-sticky">
+    <div class="h-projects-head">
+      <div>
+        <span class="eyebrow">02 / Research</span>
+        <h2>Field work, <span class="italic">in progress</span>.</h2>
+      </div>
+      <p class="lede" style="max-width:48ch">Five active programs across three continents. Each is a long answer to a small question about how a forest holds itself together. Scroll →</p>
+    </div>
+
+    <div class="h-projects-track-wrap">
+      <div class="h-projects-track" id="h-projects-track">
+        <article class="h-card">
+          <div class="h-card-img"><img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?auto=format&fit=crop&w=900&q=80" alt="Vertical Forests of the Rio Negro" /></div>
+          <div class="h-card-overlay"></div>
+          <div class="h-card-head"><span class="h-card-num">01 / 05</span><span>2019—present</span></div>
+          <div class="h-card-body">
+            <h3 class="h-card-title">Vertical Forests of the Rio Negro</h3>
+            <p class="h-card-detail">A six-year vertical stratification census across 18 hectares of igapó floodplain, building the first complete inventory of bromeliad-borne fauna in the upper canopy. Funded by the Gordon and Betty Moore Foundation.</p>
+            <div class="h-card-meta"><span><b>Location</b> · Amazonas, Brazil</span><span><b>Status</b> · Active</span><span><b>Stage</b> · Field</span></div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="h-card-img"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=900&q=80" alt="Ayahuasca Vines" /></div>
+          <div class="h-card-overlay"></div>
+          <div class="h-card-head"><span class="h-card-num">02 / 05</span><span>2021—present</span></div>
+          <div class="h-card-body">
+            <h3 class="h-card-title">Ayahuasca Vines &amp; the Limits of Translation</h3>
+            <p class="h-card-detail">Co-led with elders of the Cofán Nation. A long-form ethnobotanical study of Banisteriopsis caapi cultivars — the names, songs, and pharmacologies that travel with them — and a working paper on benefit-sharing under the Nagoya Protocol.</p>
+            <div class="h-card-meta"><span><b>Location</b> · Putumayo, Colombia</span><span><b>Status</b> · Active</span><span><b>Stage</b> · Analysis</span></div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="h-card-img"><img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=900&q=80" alt="Mycorrhizal Atlas" /></div>
+          <div class="h-card-overlay"></div>
+          <div class="h-card-head"><span class="h-card-num">03 / 05</span><span>2022—2025</span></div>
+          <div class="h-card-body">
+            <h3 class="h-card-title">The Mycorrhizal Atlas</h3>
+            <p class="h-card-detail">A three-continent mapping of below-ground fungal networks linking emergent canopy trees, in collaboration with SPUN. The project quantifies, for the first time, mycorrhizal connectivity loss in selectively logged forests.</p>
+            <div class="h-card-meta"><span><b>Location</b> · Borneo / Sepik / Manú</span><span><b>Status</b> · Active</span><span><b>Stage</b> · Field</span></div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="h-card-img"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=900&q=80" alt="Last Light" /></div>
+          <div class="h-card-overlay"></div>
+          <div class="h-card-head"><span class="h-card-num">04 / 05</span><span>2017—2023</span></div>
+          <div class="h-card-body">
+            <h3 class="h-card-title">Last Light: A Census of Emergents</h3>
+            <p class="h-card-detail">Identifying and tagging every canopy emergent above 45 meters across 12,000 hectares of primary forest. The dataset informed the 2024 IUCN reassessment of three Couratari species.</p>
+            <div class="h-card-meta"><span><b>Location</b> · Manú National Park, Perú</span><span><b>Status</b> · Active</span><span><b>Stage</b> · Analysis</span></div>
+          </div>
+        </article>
+
+        <article class="h-card">
+          <div class="h-card-img"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Sound of a Healthy Canopy" /></div>
+          <div class="h-card-overlay"></div>
+          <div class="h-card-head"><span class="h-card-num">05 / 05</span><span>2020—present</span></div>
+          <div class="h-card-body">
+            <h3 class="h-card-title">The Sound of a Healthy Canopy</h3>
+            <p class="h-card-detail">A bioacoustic study using 240 autonomous recording units across four continents to define a baseline soundscape signature for intact tropical forest. Open-source datasets released annually.</p>
+            <div class="h-card-meta"><span><b>Location</b> · Pan-tropical</span><span><b>Status</b> · Active</span><span><b>Stage</b> · Field</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="h-projects-progress">
+      <span id="hp-count">01 / 05</span>
+      <div class="bar"><span id="hp-bar"></span></div>
+      <span>Drag to scroll</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────  PUBLICATIONS  ───────────────────────────────── -->
+<section class="section" id="publications">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">03 / Publications</span>
+          <h2>Sixty-three papers, <span class="italic">a few essays</span>.</h2>
+        </div>
+        <p class="lede">Selected peer-reviewed work from 2017 onwards, plus a handful of long-form essays for non-scientific outlets. Filter by topic.</p>
+      </div>
+    </div>
+    <div class="pub-filters" id="pub-filters"></div>
+    <div class="pub-list" id="pub-list"></div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────  JOURNAL  ───────────────────────────────── -->
+<section class="section" id="journal">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">04 / Field Journal</span>
+          <h2>What I <span class="italic">saw, this year</span>.</h2>
+        </div>
+        <p class="lede">A working journal — photographs from the canopy, the forest floor, and the long muddy walks between them. Click any frame to enlarge.</p>
+      </div>
+    </div>
+    <div class="journal-grid" id="journal-grid"></div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lb-close" aria-label="Close"><svg width="14" height="14" viewBox="0 0 14 14"><path d="M2 2l10 10M12 2L2 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Next">›</button>
+    <div class="lightbox-inner" id="lb-inner">
+      <img id="lb-img" alt="" />
+      <div class="lightbox-meta">
+        <span class="title-row" id="lb-title"></span>
+        <span id="lb-counter"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────  SPECIES  ───────────────────────────────── -->
+<section class="section section-species" id="species">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">05 / Species Catalog</span>
+          <h2>A few of the <span class="italic">neighbours</span>.</h2>
+        </div>
+        <p class="lede">Plates from a field notebook — eight of the species I work with, drawn rather than photographed, with a one-line note from the journal. The full inventory lives at the lab.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="species-rail-wrap" id="species-rail-wrap">
+    <div class="species-rail-track" id="species-rail-track"></div>
+  </div>
+
+  <div class="wrap" style="margin-top:32px">
+    <div class="species-legend">
+      <span class="mono">Conservation status</span>
+      <span class="species-legend-row"><span class="spx-dot status-LC"></span> LC · <span style="color:var(--ink)">Least Concern</span></span>
+      <span class="species-legend-row"><span class="spx-dot status-NT"></span> NT · <span style="color:var(--ink)">Near Threatened</span></span>
+      <span class="species-legend-row"><span class="spx-dot status-VU"></span> VU · <span style="color:var(--ink)">Vulnerable</span></span>
+      <span class="species-legend-row"><span class="spx-dot status-EN"></span> EN · <span style="color:var(--ink)">Endangered</span></span>
+      <span class="species-legend-row"><span class="spx-dot status-CR"></span> CR · <span style="color:var(--ink)">Critically Endangered</span></span>
+      <span class="mono" style="margin-left:auto">Hover to pause</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────  EXPEDITIONS  ───────────────────────────────── -->
+<section class="section" id="expeditions">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">06 / Expeditions</span>
+          <h2>Nine countries, <span class="italic">one canopy</span>.</h2>
+        </div>
+        <p class="lede">Active and recent field sites. Hover or tap a pin to see the trip log. The lab maintains permanent canopy infrastructure at three of these stations.</p>
+      </div>
+    </div>
+
+    <div class="map-shell" id="map-shell">
+      <svg viewBox="0 0 100 60" class="map-svg" preserveAspectRatio="none" id="map-svg">
+        <g stroke="var(--rule)" stroke-width="0.15" opacity="0.4">
+          <line x1="0" y1="10" x2="100" y2="10"/><line x1="0" y1="20" x2="100" y2="20"/><line x1="0" y1="30" x2="100" y2="30"/><line x1="0" y1="40" x2="100" y2="40"/><line x1="0" y1="50" x2="100" y2="50"/>
+          <line x1="20" y1="0" x2="20" y2="60"/><line x1="40" y1="0" x2="40" y2="60"/><line x1="60" y1="0" x2="60" y2="60"/><line x1="80" y1="0" x2="80" y2="60"/>
+        </g>
+        <line x1="0" y1="30" x2="100" y2="30" stroke="var(--moss)" stroke-width="0.2" stroke-dasharray="0.6 0.6" opacity="0.6" />
+        <text x="1" y="29" fill="var(--ink-3)" font-size="1.2" font-family="var(--mono)" letter-spacing="0.1">EQUATOR · 0°</text>
+
+        <path class="map-land" d="M8,12 L18,8 L26,10 L30,18 L26,26 L22,28 L16,28 L12,22 Z"/>
+        <path class="map-land" d="M24,30 L32,28 L34,34 L32,46 L28,56 L24,54 L22,42 Z"/>
+        <path class="map-land" d="M44,12 L54,10 L58,14 L56,20 L52,22 L52,32 L56,40 L54,52 L48,54 L44,48 L42,38 L44,28 L42,18 Z"/>
+        <path class="map-land" d="M58,8 L78,8 L86,12 L88,20 L82,26 L74,24 L66,22 L60,16 Z"/>
+        <path class="map-land" d="M76,30 L84,28 L88,30 L86,36 L80,38 L74,34 Z"/>
+        <path class="map-land" d="M82,46 L92,46 L92,52 L86,54 L80,52 Z"/>
+
+        <rect x="0" y="22" width="100" height="16" fill="var(--moss)" opacity="0.06"/>
+
+        <!-- pins injected by JS -->
+      </svg>
+
+      <div class="map-legend">
+        <div style="color:var(--ink);font-family:var(--serif);font-style:italic;font-size:14px;letter-spacing:0;text-transform:none">Field stations &amp; expeditions</div>
+        <div><span style="color:var(--accent)">●</span>  Active site</div>
+        <div>Tropical band shaded</div>
+      </div>
+
+      <div class="map-detail open" id="map-detail">
+        <span class="mono" id="md-year">2024</span>
+        <h4 id="md-title">Reserva Mamirauá</h4>
+        <div class="country" id="md-country">Amazonas, Brazil</div>
+        <p class="body" id="md-body"></p>
+        <div style="margin-top:16px">
+          <div class="row"><span>Days in field</span><span id="md-days">—</span></div>
+          <div class="row"><span>Team</span><span id="md-team">—</span></div>
+          <div class="row"><span>Status</span><span style="color:var(--accent)">Active</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="exp-list" id="exp-list"></div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────  PRESS  ───────────────────────────────── -->
+<section class="section" id="press">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">07 / Press &amp; Talks</span>
+          <h2>Selected <span class="italic">conversations</span>.</h2>
+        </div>
+        <p class="lede">Talks, profiles, and essays from the past few years — including pieces for non-scientific audiences where I get to be less measured.</p>
+      </div>
+    </div>
+    <div class="press-grid" id="press-grid"></div>
+  </div>
+</section>
+
+<!-- ─────────────────────────────────  CONTACT  ───────────────────────────────── -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">08 / Get in touch</span>
+          <h2>Press, <span class="italic">collaborators</span>, students.</h2>
+        </div>
+        <p class="lede">I read every message. Replies are slow when I'm in the field — which is most of the year. For urgent press, please contact the lab directly.</p>
+      </div>
+    </div>
+
+    <div class="contact-shell">
+      <div class="contact-display">
+        Let's <span class="it">talk about</span> what the forest is doing<span class="it">.</span>
+        <div style="margin-top:40px">
+          <span class="magnetic-wrap" data-magnetic>
+            <a href="mailto:iris.vega@ufam.edu.br" class="magnetic big-cta">
+              Write to Iris
+              <span class="big-cta-arrow">→</span>
+            </a>
+          </span>
+        </div>
+      </div>
+
+      <div class="contact-channels">
+        <a href="mailto:iris.vega@ufam.edu.br" class="contact-row"><span class="k">Email</span><span class="v mono">iris.vega@ufam.edu.br</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+        <a href="#" class="contact-row"><span class="k">Lab</span><span class="v">Canopy Stratification Lab, UFAM</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+        <a href="mailto:press@canopystrat.org" class="contact-row"><span class="k">Press</span><span class="v mono">press@canopystrat.org</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+        <a href="#" class="contact-row"><span class="k">Speaking</span><span class="v">via The Lavin Agency</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+        <a href="#" class="contact-row"><span class="k">PhD applicants</span><span class="v">Cycle opens Jan 2026</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+        <a href="#" class="contact-row"><span class="k">Social</span><span class="v mono">@drvega.bsky.social</span><svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 12L12 2M12 2H4M12 2V10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ─────────────────────────────────  FOOTER  ───────────────────────────────── -->
+<footer class="footer">
+  <div class="footer-col">
+    <h4>The Canopy Stratification Lab</h4>
+    <div>Universidade Federal do Amazonas</div>
+    <div>Av. General Rodrigo Octávio · 6200</div>
+    <div>Manaus · AM · 69080-900 · Brazil</div>
+  </div>
+  <div class="footer-col">
+    <div style="color:var(--ink-3);margin-bottom:8px">Site</div>
+    <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#journal">Field Journal</a>
+  </div>
+  <div class="footer-col">
+    <div style="color:var(--ink-3);margin-bottom:8px">Lab</div>
+    <a href="#">Team</a><a href="#">Open data</a><a href="#">Field methods</a><a href="#">Funding</a>
+  </div>
+  <div class="footer-col">
+    <div style="color:var(--ink-3);margin-bottom:8px">Elsewhere</div>
+    <a href="#">Google Scholar</a><a href="#">ORCID</a><a href="#">Bluesky</a><a href="#">Mastodon</a>
+  </div>
+  <div class="footer-base">
+    <span>© Iris Vega · 2017—2026</span>
+    <span>Site set in Newsreader &amp; Manrope · v3.2</span>
+    <span>Made under the canopy, mostly</span>
+  </div>
+</footer>
+
+<div class="grain"></div>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
